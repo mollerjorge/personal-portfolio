@@ -1,28 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { ThemeProvider } from 'styled-components';
+import StyledApp from './StyledApp';
+import themes from './settings/themes';
+import PublicRoutes from './router';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <ThemeProvider theme={themes.themeDefault}>
+      <StyledApp>
+        <PublicRoutes />
+      </StyledApp>
+    </ThemeProvider>
+  </div>
+);
 
 export default App;

@@ -12,3 +12,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: 'Darwin Pro';
+  src: url('/fonts/darwin-pro-regular.otf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Darwin Pro Light';
+  src: url('/fonts/darwin-pro-light.otf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Darwin Pro Semibold';
+  src: url('/fonts/darwin-pro-semibold.otf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Darwin Pro Extralight';
+  src: url('/fonts/darwin-pro-extralight.otf'); /* IE9 Compat Modes */
+}
+body {
+  font-family: 'Darwin Pro';
+}
