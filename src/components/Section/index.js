@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import SectionWrapper from './section.styles';
+import { SectionWrapper, SectionContent } from './section.styles';
 import Title from '../Title';
 
 class Section extends Component {
@@ -14,7 +14,7 @@ class Section extends Component {
     </div>
   );
 
-  static Content = props => <div className="section__content">{props.children}</div>;
+  static Content = props => <SectionContent {...props}>{props.children}</SectionContent>;
 
   render() {
     const { children, nro, className } = this.props;
@@ -32,13 +32,12 @@ class Section extends Component {
 }
 
 Section.defaultProps = {
-  children: [],
   nro: '',
   className: '',
 };
 
 Section.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   nro: PropTypes.string,
   className: PropTypes.string,
 };

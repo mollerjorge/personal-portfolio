@@ -4,18 +4,18 @@ import { palette } from 'styled-theme';
 const SocialWrapper = styled.div`
 
     position: fixed;
-    top: 50%;
     right: 0rem;
+    top: 50%;
     transform: translateY(-50%);
     .social {
 
       &__square {
-        width: 5rem;
-        height: 5rem;
+        align-items: center;
         background: ${palette('primary', 0)};
         display: flex;
+        width: 5rem;
+        height: 5rem;
         justify-content: center;
-        align-items: center;
 
         margin-top: 1rem;
         > img {

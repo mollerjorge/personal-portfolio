@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 import { palette, font } from 'styled-theme';
 
-console.log(palette('primary', 2));
 const StyledApp = styled.div`
-  font-family: ${font('primary', 0)};
-  
   h1,
   h2,
   h3,
@@ -24,6 +21,7 @@ const StyledApp = styled.div`
   .logo {
     width: 2rem;
   }
+
 
   .container {
   padding-right: 32px;

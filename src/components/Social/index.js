@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import SocialWrapper from './social.styles';
 
 class Social extends Component {
@@ -12,6 +13,13 @@ class Social extends Component {
       <SocialWrapper>{ displayChildren }</SocialWrapper>
     );
   }
+}
+
+Social.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 }
 
 export default Social;

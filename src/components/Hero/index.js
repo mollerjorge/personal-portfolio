@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import HeroWrapper from './hero.styles.js';
+import PropTypes from 'prop-types';
+import HeroWrapper from './hero.styles';
 
 class Hero extends Component {
   static Left = props => <div className="hero__left">{props.children}</div>
@@ -15,6 +16,13 @@ class Hero extends Component {
       </HeroWrapper>
     )
   }
+}
+
+Hero.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 }
 
 export default Hero;

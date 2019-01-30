@@ -9,8 +9,8 @@ const HeroWrapper = styled.div`
     }
 
     &__right {
-      flex: 1;
       display: flex;
+      flex: 1;
       justify-content: center;
       padding-top: 5rem;
       > img {

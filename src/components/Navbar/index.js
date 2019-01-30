@@ -1,5 +1,6 @@
-import React, { Component, Fragment } from 'react';
-import NavbarWrapper from './navbar.styles.js';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import NavbarWrapper from './navbar.styles';
 
 class Navbar extends Component {
   static Brand = props => <div className="navbar__brand">{props.children}</div>
@@ -18,6 +19,13 @@ class Navbar extends Component {
       </NavbarWrapper>
     );
   }
+}
+
+Navbar.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 }
 
 export default Navbar;

@@ -58,14 +58,10 @@ const TechBarWrapper = styled.div`
 
       &__redux,
       &__node,
-      &__sass {
-        width: 8rem;
-      }
-
+      &__sass,
       &__react {
         width: 8rem;
       }
-
     }
 `;
 

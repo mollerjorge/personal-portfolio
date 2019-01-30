@@ -5,7 +5,7 @@ theme.palette = {
     '#FF0053', // Bright pink
     '#691D91', // Bright violet,
     '#1a1a3a', // Midnight blue,
-    '#BA0341', // Dark pink
+    '#fd3576', // Dark pink
   ],
   white: [
     '#FFFFFF', // White

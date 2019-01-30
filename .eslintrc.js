@@ -2,6 +2,7 @@ module.exports = {
 	"parser": "babel-eslint",
 	"extends": "airbnb",
 	"rules": {
+		"no-confusing-arrow": 0,
 		"max-len": ["error",100],
 		"implicit-arrow-linebreak": 0,
 		"semi": 0,
