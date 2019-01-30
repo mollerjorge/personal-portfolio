@@ -8,8 +8,10 @@ theme.palette = {
     '#BA0341', // Dark pink
   ],
   white: [
+    '#FFFFFF', // White
     '#F4F5F6', // White
-    '#F4F5F6', // Light grey
+    '#a7a7a7', // Grey
+    '#F4F5F6', // light grey
   ],
 };
 

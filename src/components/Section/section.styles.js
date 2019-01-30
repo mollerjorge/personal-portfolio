@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { palette, font } from 'styled-theme';
 
 const SectionWrapper = styled.div`
-  
+  margin-top: 15rem;  
   .section {
 
     &__content {
@@ -11,7 +11,7 @@ const SectionWrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 2rem 0;
+      padding: 3rem 0;
       p { 
         max-width: 80rem;
         text-align: justify;
@@ -26,7 +26,7 @@ const SectionWrapper = styled.div`
         content: '${props => props.nro ? props.nro : 'sss'}';
         color: ${palette('white', 1)};
         left: -10rem;
-        bottom: 0rem;
+        bottom: -1.3rem;
         font-size: 20rem;
         font-family: ${font('normal')}; 
         z-index: -1;
@@ -39,7 +39,7 @@ const SectionWrapper = styled.div`
     
       div {
         width: 20rem;
-        height: 1rem;
+        height: .8rem;
         background: ${palette('primary', 0)};
         border-radius: 100rem;
       }
