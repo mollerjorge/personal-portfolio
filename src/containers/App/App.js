@@ -174,7 +174,7 @@ class App extends Component {
                     <div className="dot" />
                   </Title>
                   <h1 className="mobile__title">
-                    Hi!, <br />
+                    Hi!, 
                     I'm <br />
                     Jorge Moller
                     <div className="dot" />

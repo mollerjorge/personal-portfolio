@@ -108,7 +108,7 @@ const works = [
   },
   {
     backgroundUrl: stCardBg,
-    name: 'Technical services',
+    name: 'Technical Services',
     desc: 'Service management solution for company: Technical Services',
     workBackground: stWorkBg,
     client:

@@ -24,6 +24,11 @@ const WorkWrapper = styled.div`
 
       h2 {
         margin: 0;
+        ${media.phone`
+          line-height: 6rem;
+          margin-top: 2rem;
+        `}
+        
       }
     }
 

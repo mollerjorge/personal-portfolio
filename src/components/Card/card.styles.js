@@ -92,7 +92,11 @@ const CardWrapper = styled.div`
     &.noodle,
     &.integra {
       margin-left: -20rem;
+      ${media.phone`
+        margin-left: -15rem;
+      `}
     }
+    
 
     &.sinergy {
       margin-left: -10rem;

@@ -17,7 +17,7 @@ const HeaderWrapper = styled.div`
     background: linear-gradient(45deg, ${palette('primary', 2)}, ${palette('primary', 3)});
     width: 100%;
     height: calc(100vh - 9rem);
-    z-index: 9999999;
+    z-index: 99999999;
     transition: all 0.3s;
 
     a {
@@ -71,6 +71,10 @@ const HeaderWrapper = styled.div`
     transition: all 0.2s;
     cursor: pointer;
     z-index: 999999999;
+
+    ${media.phone`
+      display: none;
+    `}
   }
 `;
 
