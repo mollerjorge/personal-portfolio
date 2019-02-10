@@ -56,7 +56,7 @@ class App extends Component {
       self.setState({
         isHome: false
       });
-    }, 750);
+    }, 1000);
   };
 
   displayCards = () =>
@@ -180,7 +180,7 @@ class App extends Component {
                     <div className="dot" />
                   </h1>
                   <p>
-                    I’m a fullstack web developer who specializes in crafting <br /> perfomant and
+                    I’m a fullstack web developer who specializes in crafting perfomant and
                     beautiful web applications.
                   </p>
                 </Hero.Left>
@@ -392,7 +392,7 @@ class App extends Component {
                       showOverlay: false
                     });
                   }, 700);
-                }, 700);
+                }, 900);
               }}
             />
           )}

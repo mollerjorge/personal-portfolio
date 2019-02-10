@@ -50,6 +50,8 @@ const HeroWrapper = styled.div`
     &__left.active {
       margin-top: 0rem;
       opacity: 1;
+
+      
     }
 
     &__right {
