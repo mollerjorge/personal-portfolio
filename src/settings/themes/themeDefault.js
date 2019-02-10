@@ -12,6 +12,7 @@ theme.palette = {
     '#F4F5F6', // White
     '#a7a7a7', // Grey
     '#F4F5F6', // light grey
+    '#ececec'
   ],
 };
 

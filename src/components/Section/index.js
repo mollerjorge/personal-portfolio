@@ -5,25 +5,38 @@ import Title from '../Title';
 
 class Section extends Component {
   static Title = props => (
-    <div className="section__title">
+    <div
+      className="section__title"
+      style={{ margin: `${props.margin ? props.margin : '0'}` }}
+    >
       <Title>{props.children}</Title>
-      <div className="section__title-underline">
-        <div />
-        <div />
-      </div>
     </div>
   );
 
   static Content = props => <SectionContent {...props}>{props.children}</SectionContent>;
 
+  static Row = props => <div className="section__row">{props.children}</div>;
+
+  static Column = props => (
+    <div
+      className="section__column"
+      style={{ margin: props.margin }}
+    >
+      {props.children}
+    </div>
+  );
+
   render() {
-    const { children, nro, className } = this.props;
+    const {
+      children, nro, id, className,
+    } = this.props;
     const displayChildren = React.Children.map(children, child =>
       React.cloneElement(child, { nro }));
     return (
       <SectionWrapper
-        className={className}
+        className={`${className} container`}
         nro={nro}
+        id={id}
       >
         {displayChildren}
       </SectionWrapper>
@@ -34,12 +47,14 @@ class Section extends Component {
 Section.defaultProps = {
   nro: '',
   className: '',
+  id: '',
 };
 
 Section.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   nro: PropTypes.string,
   className: PropTypes.string,
+  id: PropTypes.string,
 };
 
 export default Section;

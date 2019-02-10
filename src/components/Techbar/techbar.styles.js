@@ -1,10 +1,16 @@
 import styled from 'styled-components';
-import {font, palette} from 'styled-theme';
+import { font, palette } from 'styled-theme';
+import media from '../../helpers/media';
 
 const TechBarWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     margin-bottom : 3rem;
+
+    ${media.phone`
+      margin-bottom: 5rem;
+    `}
+
     .techbar {
       &__content {
         display: flex;

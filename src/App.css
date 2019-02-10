@@ -12,6 +12,13 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 h1 {
   font-family: 'Darwin Pro Semibold';
   font-size: 10rem;
@@ -20,6 +27,14 @@ h1 {
 }
 
 h2 {
+  font-family: 'Darwin Pro Semibold';
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 11rem;
+  margin-bottom: 0;
+}
+
+h3 {
   font-family: 'Darwin Pro Semibold';
   font-size: 3rem;
   font-weight: 400;
@@ -45,6 +60,10 @@ p {
 @font-face {
   font-family: 'Darwin Pro Semibold';
   src: url('/fonts/darwin-pro-semibold.otf'); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Darwin Pro Bold';
+  src: url('/fonts/darwin-pro-bold.otf'); /* IE9 Compat Modes */
 }
 @font-face {
   font-family: 'Darwin Pro Extralight';

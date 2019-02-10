@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
 import footer from '../../images/footer.svg';
+import media from '../../helpers/media';
 
 const FooterWrapper = styled.div`
   
@@ -13,6 +14,9 @@ const FooterWrapper = styled.div`
   position: absolute;
   width: 100%;
   
+  ${media.phone`
+    display: none;
+  `}
 
   .footer {
     &__content {
@@ -21,10 +25,18 @@ const FooterWrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       margin-top: 8rem;
-      h2 {
+
+      ${media.phone`
+        margin-top: 4rem;
+      `}
+      h3 {
         color: ${palette('white', 0)};
         line-height: 6rem;
         margin: 0;
+
+        ${media.phone`
+          font-size: 2rem;
+      `}
       }
     }
   }

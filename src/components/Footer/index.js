@@ -4,7 +4,7 @@ import FooterWrapper from './footer.styles';
 
 class Footer extends Component {
   static Content = props => (
-    <div className="footer">
+    <div id="footer" className="footer">
       <div className="footer__content">{props.children}</div>
     </div>
   );
@@ -17,10 +17,7 @@ class Footer extends Component {
 }
 
 Footer.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-}
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export default Footer;
