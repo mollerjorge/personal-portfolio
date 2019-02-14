@@ -3,10 +3,17 @@ import { palette, font } from 'styled-theme';
 import media from '../../helpers/media';
 
 export const SectionWrapper = styled.div`
-  margin-top: 15rem;  
+  
+  &&& {
+    margin-top: 15rem;  
+    ${props => (props.marginTop ? `margin-top: ${props.marginTop}` : '')}
 
-  
-  
+    ${media.phone`
+      margin-top: 5rem;
+      margin-bottom: 15rem;
+    `}
+  }
+
   .section {
     &__title {
       position: relative;

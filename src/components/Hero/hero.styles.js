@@ -1,9 +1,56 @@
-import styled from 'styled-components';
-import media from '../../helpers/media';
+import styled, { keyframes } from 'styled-components';
 import {palette} from 'styled-theme';
+import media from '../../helpers/media';
+
+const astronautBounce = keyframes`
+  0%   { bottom: 5rem; }
+  50% { bottom: 3rem}
+  100% { bottom:  5rem}
+`;
+
+const notebook = keyframes`
+  0%   { bottom: 20rem; }
+  50% { bottom: 22rem}
+  100% { bottom:  20rem}
+`;
 
 const HeroWrapper = styled.div`
   display: flex;
+  min-height: 93vh;
+  position: relative;
+
+  .astronaut {
+    position: absolute;
+    bottom: 0;
+    width: 141%;
+    left: -21rem;
+    ${media.phone`
+      display: none;
+    `}
+  }
+
+  .astronaut-man {
+    position: absolute;
+    width: 32rem;
+    bottom: 5rem;
+    right: 10rem;
+    animation: ${astronautBounce} 7s ease-in-out infinite;
+    ${media.phone`
+      display: none;
+    `}
+  } 
+
+  .notebook {
+    position: absolute;
+    width: 14rem;
+    bottom: 20rem;
+    right: 38rem;
+    animation: ${notebook} 7s ease-in-out infinite;
+    ${media.phone`
+      display: none;
+    `}
+  }
+
   ${media.phone`
       h1 {
         font-size: 6rem;
@@ -45,6 +92,10 @@ const HeroWrapper = styled.div`
       margin-top: -5rem;
       opacity: 0;
       transition: all 1s ease-in-out;
+
+      ${media.phone`
+        padding-top: 16rem;
+      `}
     }
 
     &__left.active {
@@ -55,7 +106,7 @@ const HeroWrapper = styled.div`
     }
 
     &__right {
-      margin-top: -5rem;
+      margin-top: 5rem;
       opacity: 0;
       transition: all 1s ease-in-out;
 
@@ -69,6 +120,7 @@ const HeroWrapper = styled.div`
       padding-top: 5rem;
       > img {
         height: 60rem;
+        
       }
     }
 

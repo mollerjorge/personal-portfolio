@@ -4,6 +4,9 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import Title from '../../components/Title';
 import profilePic from '../../images/jm.png';
+import astronaut from '../../images/astronaut.svg';
+import astronaut1 from '../../images/astronaut1.svg';
+import notebook from '../../images/notebook.svg';
 import Section from '../../components/Section';
 import linkedin from '../../images/linkedin.svg';
 import medium from '../../images/medium.svg';
@@ -174,8 +177,7 @@ class App extends Component {
                     <div className="dot" />
                   </Title>
                   <h1 className="mobile__title">
-                    Hi!, 
-                    I'm <br />
+                    Hi!, I'm <br />
                     Jorge Moller
                     <div className="dot" />
                   </h1>
@@ -184,17 +186,27 @@ class App extends Component {
                     beautiful web applications.
                   </p>
                 </Hero.Left>
-                <Hero.Right animateHero={animateHero}>
-                  <img
-                    src={profilePic}
-                    alt="profile"
-                  />
-                </Hero.Right>
+                <Hero.Right></Hero.Right>
+                <img
+                  src={astronaut}
+                  alt="astronaut"
+                  className="astronaut"
+                />
+                <img
+                  src={astronaut1}
+                  alt="astronaut"
+                  className="astronaut-man"
+                />
+                <img
+                  src={notebook}
+                  alt="astronaut"
+                  className="notebook"
+                />
               </Hero>
-
               <Section
                 nro="01"
                 id="about"
+                marginTop="20rem"
               >
                 <Section.Title>About Me</Section.Title>
                 <Section.Content>

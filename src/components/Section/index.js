@@ -28,7 +28,7 @@ class Section extends Component {
 
   render() {
     const {
-      children, nro, id, className,
+      children, nro, id, className, marginTop
     } = this.props;
     const displayChildren = React.Children.map(children, child =>
       React.cloneElement(child, { nro }));
@@ -37,6 +37,7 @@ class Section extends Component {
         className={`${className} container`}
         nro={nro}
         id={id}
+        marginTop={marginTop}
       >
         {displayChildren}
       </SectionWrapper>

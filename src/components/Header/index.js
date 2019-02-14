@@ -136,7 +136,7 @@ class Header extends Component {
                   </Link>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <a href="https://medium.com/@_jmoller">Blog</a>
                 </li>
               </ul>
 
