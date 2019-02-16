@@ -47,7 +47,7 @@ const works = [
     project:
       'A cloud-based backoffice that manages the whole business. The application offers a variety of features, among the most important ones are: payment integration services with Paymentsense, Barclaycard, iZettle, stock and inventory tracking, loyalty and rewards system and the iPad grid configuration.',
     challenge:
-      'The biggest challenge I went through at Nobly was to build the iPad grid builder which allows the user to setup the ipad layout for the different products and categories. It was built using the drag and drop native api from html, and using react-virtualized to render the products in the most efficient way possible.',
+      'The biggest challenge I went through at Nobly was to code the iPad grid builder which allows the user to setup the ipad layout for the different products and categories. It was built using the drag and drop native api from html, and using react-virtualized to render the products in the most efficient way possible.',
     tools: ['React', 'Redux', 'styled-components', 'Node', 'Mongo'],
     images: [noblyWork01, noblyWork02, noblyWork03]
   },

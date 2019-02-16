@@ -189,7 +189,7 @@ class App extends Component {
                 <Hero.Right></Hero.Right>
                 <img
                   src={astronaut}
-                  alt="astronaut"
+                alt="astronaut"
                   className="astronaut"
                 />
                 <img
@@ -212,7 +212,7 @@ class App extends Component {
                 <Section.Content>
                   <p>
                     {' '}
-                    I'm a dynamic, detail-oriented developer with more than 8 years of experience in
+                    I'm a dynamic and detail-oriented web developer with more than 8 years of experience in
                     the IT industry. Armed with an extensive understanding of Javascript, React, CSS
                     and HTML, most days you'll find me digging into a React app, setting up a Node
                     API or just marking up an elegant web interface.
