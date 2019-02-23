@@ -28,6 +28,7 @@ import Work from '../Work/Work';
 import AppOverlay from './app.styles';
 import TechBarContainer from '../../components/Techbar/techbarContainer.styles';
 import cvPath from '../../cv/resume-english.pdf';
+import { relative } from 'path';
 
 class App extends Component {
   constructor(props) {
@@ -145,7 +146,7 @@ class App extends Component {
     return (
       <Fragment>
         <AppOverlay showOverlay={showOverlay} />
-        <div>
+        <div style={{position: relative}}>
           {isHome && (
             <Fragment>
               <Header />
@@ -169,7 +170,11 @@ class App extends Component {
                   />
                 </Social.Square>
               </Social>
-
+              <img
+                  src={astronaut}
+                alt="astronaut"
+                  className="astronaut"
+                />
               <Hero>
                 <Hero.Left animateHero={animateHero}>
                   <Title>
@@ -187,11 +192,7 @@ class App extends Component {
                   </p>
                 </Hero.Left>
                 <Hero.Right></Hero.Right>
-                <img
-                  src={astronaut}
-                alt="astronaut"
-                  className="astronaut"
-                />
+                
                 <img
                   src={astronaut1}
                   alt="astronaut"

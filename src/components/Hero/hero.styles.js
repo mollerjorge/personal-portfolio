@@ -19,15 +19,7 @@ const HeroWrapper = styled.div`
   min-height: 93vh;
   position: relative;
 
-  .astronaut {
-    position: absolute;
-    bottom: 0;
-    width: 141%;
-    left: -21rem;
-    ${media.phone`
-      display: none;
-    `}
-  }
+  
 
   .astronaut-man {
     position: absolute;

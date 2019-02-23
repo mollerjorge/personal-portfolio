@@ -69,3 +69,15 @@ p {
   font-family: 'Darwin Pro Extralight';
   src: url('/fonts/darwin-pro-extralight.otf'); /* IE9 Compat Modes */
 }
+
+.astronaut {
+  position: absolute;
+  top: 85vh;
+  width: 100vw;
+}
+
+@media (max-width: 36em) {
+  .astronaut {
+    display: none;
+  }
+}
