@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import {palette} from 'styled-theme';
+import { palette } from 'styled-theme';
 import media from '../../helpers/media';
 
 const astronautBounce = keyframes`
@@ -19,8 +19,6 @@ const HeroWrapper = styled.div`
   min-height: 93vh;
   position: relative;
 
-  
-
   .astronaut-man {
     position: absolute;
     width: 32rem;
@@ -30,7 +28,7 @@ const HeroWrapper = styled.div`
     ${media.phone`
       display: none;
     `}
-  } 
+  }
 
   .notebook {
     position: absolute;
@@ -61,7 +59,7 @@ const HeroWrapper = styled.div`
     
       display: block;
     `}
-  }  
+  }
 
   .dot {
     width: 1.5rem;
@@ -78,7 +76,6 @@ const HeroWrapper = styled.div`
   }
 
   .hero {
-  
     &__left {
       flex: 1;
       margin-top: -5rem;
@@ -93,8 +90,6 @@ const HeroWrapper = styled.div`
     &__left.active {
       margin-top: 0rem;
       opacity: 1;
-
-      
     }
 
     &__right {
@@ -105,14 +100,13 @@ const HeroWrapper = styled.div`
       ${media.phone`
         display: none;
       `}
-      
+
       display: flex;
       flex: 1;
       justify-content: center;
       padding-top: 5rem;
       > img {
         height: 60rem;
-        
       }
     }
 
